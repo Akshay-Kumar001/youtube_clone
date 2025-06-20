@@ -1,11 +1,11 @@
 import React from "react";
 import images from "../assets/image";
 
-const Navbar = () => {
+const Navbar = ({setSidebar} ) => {
   return (
     <nav className="flex items-center justify-between sticky top-0 p-2.5 bg-white  shadow-2xs z-10">
       <div className="flex items-center">
-        <img className="cursor-pointer w-5 mr-5" src={images.menu} alt="" />
+        <img className="cursor-pointer w-5 mr-5" onClick={() => setSidebar(prev => prev===false ? true : false)} src={images.menu} alt="" />
         <img className="cursor-pointer w-32" src={images.logo} alt="" />
       </div>
       <div className="flex items-center">
