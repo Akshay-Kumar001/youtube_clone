@@ -2,7 +2,7 @@ import images from "../assets/image";
 const Sidebar = ({ sidebar }) => {
   return (
     <div
-      className={`bg-white  h-100vh fixed top-0 pt-20 pl-2.5 ${
+      className={`bg-white  h-screen fixed top-0 pt-20 pl-2.5 ${
         sidebar ? "w-[15%]" : "w-[5%] side-bar-small"
       }`}
     >

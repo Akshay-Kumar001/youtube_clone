@@ -42,6 +42,7 @@ import Tom from "../assets/tom.png";
 import Upload from "../assets/upload.png";
 import UserProfile from "../assets/user_profile.jpg";
 import VoiceSearch from "../assets/voice-search.png";
+import Video from "../assets/video.mp4"
 
 const images = {
   automobiles: Automobiles,
@@ -86,6 +87,7 @@ const images = {
   upload: Upload,
   user_profile: UserProfile,
   voice_search: VoiceSearch,
+  video:Video,
 };
 
 export default images;
