@@ -1,47 +1,124 @@
 import React from "react";
-
+import images from "../assets/image";
 const PlayVideo = () => {
   return (
-    <div>
-      <video src={images.video} controls autoPlay muted></video>
-      <h3>test</h3>
-      <div>
+    <div className="basic-[69%]">
+      <video
+        src={images.video}
+        controls
+        autoPlay
+        muted
+        className="w-full"
+      ></video>
+      <h3 className="mt-2.5 text-2xl font-semibold">test</h3>
+      <div className="flex items-center justify-between flex-wrap mt-2.5 text-sm text-slate-600">
         <p>1525 Views &bull; 2 days ago</p>
-        <div>
-          <span>
-            <img src={images.like} alt="" />
+        <div className="flex items-center gap-3.5">
+          <span className="inline-flex items-center gap-2">
+            <img className="w-5" src={images.like} alt="" />
             125
           </span>
-          <span>
-            <img src={images.like} alt="" />2
+          <span className="inline-flex items-center gap-2">
+            <img className="w-5" src={images.like} alt="" />2
           </span>
-          <span>
-            <img src={images.share} alt="" />
+          <span className="inline-flex items-center gap-2">
+            <img className="w-5" src={images.share} alt="" />
             Share
           </span>
-          <span>
-            <img src={images.save} alt="" />
+          <span className="inline-flex items-center gap-2">
+            <img className="w-5" src={images.save} alt="" />
             Save
           </span>
         </div>
       </div>
-      <hr />
-      <div>
-        <img src={images.jack} alt="" />
-        <div>
-          <p>GreatStack</p>
-          <span>1M Subscribers</span>
+      <hr className="border-0 h-px bg-gray-300 my-2.5" />
+      <div className="flex items-center mt-5 gap-3.5">
+        <img src={images.jack} alt="" className="w-10 rounded-full" />
+        <div className="grow ">
+          <p className="text-lg font-semibold text-black leading-4">
+            GreatStack
+          </p>
+          <span className="text-xs text-slate-600 leading-3">
+            1M Subscribers
+          </span>
         </div>
 
-        <button>Subscribe</button>
+        <button className="bg-red-600 text-white py-2 px-7 rounded-sm border-0 outline-0 cursor-pointer">
+          Subscribe
+        </button>
       </div>
-      <div>
-        <p>Chanels thats make learning Easy</p>
-        <p>
-            Subsribe gaimg to watch more gameing video.
+      <div className="pl-14 my-3.5">
+        <p className="text-sm text-slate-600 mb-1">
+          Chanels thats make learning Easy
+        </p>
+        <p className="text-sm text-slate-600 mb-1">
+          Subsribe gaimg to watch more gameing video.
         </p>
         <hr />
-        <h4>130 Comments</h4>
+        <h4 className="text-sm text-slate-600 mt-1">130 Comments</h4>
+        <div className="flex items-start my-5 mx-0 gap-3.5">
+          <img className="w-8 rounded-full" src={images.user_profile} alt="" />
+          <div>
+            <h3 className="text-sm mb-0.5 ">
+              Rakesh Kumar{" "}
+              <span className="text-xs text-slate-600 font-semibold ml-2">
+                1 Day Ago
+              </span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus asperiores natus odit ex doloremque, dolorem ducimus
+              saepe et deleniti cumque!
+            </p>
+            <div className="flex item-center gap-1 my-2 mx-0 text-sm">
+              <img className="w-5 rounded-0 " src={images.like} alt="" />
+              <span className="mr-5 text-slate-600">244</span>
+              <img className="w-5 rounded-0 " src={images.dislike} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="flex items-start my-5 mx-0 gap-3.5">
+          <img className="w-8 rounded-full" src={images.user_profile} alt="" />
+          <div>
+            <h3 className="text-sm mb-0.5 ">
+              Rakesh Kumar{" "}
+              <span className="text-xs text-slate-600 font-semibold ml-2">
+                1 Day Ago
+              </span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus asperiores natus odit ex doloremque, dolorem ducimus
+              saepe et deleniti cumque!
+            </p>
+            <div className="flex item-center gap-1 my-2 mx-0 text-sm">
+              <img className="w-5 rounded-0 " src={images.like} alt="" />
+              <span className="mr-5 text-slate-600">244</span>
+              <img className="w-5 rounded-0 " src={images.dislike} alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="flex items-start my-5 mx-0 gap-3.5">
+          <img className="w-8 rounded-full" src={images.user_profile} alt="" />
+          <div>
+            <h3 className="text-sm mb-0.5 ">
+              Rakesh Kumar{" "}
+              <span className="text-xs text-slate-600 font-semibold ml-2">
+                1 Day Ago
+              </span>
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repellendus asperiores natus odit ex doloremque, dolorem ducimus
+              saepe et deleniti cumque!
+            </p>
+            <div className="flex item-center gap-1 my-2 mx-0 text-sm">
+              <img className="w-5 rounded-0 " src={images.like} alt="" />
+              <span className="mr-5 text-slate-600">244</span>
+              <img className="w-5 rounded-0 " src={images.dislike} alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

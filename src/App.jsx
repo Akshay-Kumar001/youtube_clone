@@ -5,9 +5,8 @@ import Home from "./Pages/Home.jsx";
 import Video from "./Pages/Video.jsx";
 import { useState } from "react";
 function App() {
+  const [sidebar, setSidebar] = useState(true);
 
-  const [sidebar , setSidebar] = useState(true);
-  
   return (
     <>
       <Navbar setSidebar={setSidebar} />
