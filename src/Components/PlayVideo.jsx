@@ -2,7 +2,7 @@ import React from "react";
 import images from "../assets/image";
 const PlayVideo = () => {
   return (
-    <div className="basic-[69%]">
+    <div className="w-2/3">
       <video
         src={images.video}
         controls

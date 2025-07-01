@@ -1,5 +1,5 @@
 import images from "../assets/image";
-const Sidebar = ({ sidebar }) => {
+const Sidebar = ({ sidebar, category, setCategory }) => {
   return (
     <div
       className={`bg-white  h-screen fixed top-0 pt-20 pl-2.5 ${
