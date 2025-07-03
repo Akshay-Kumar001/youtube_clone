@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+.side-bar-small .side-link {
+    width: fit-content;
+}
 
 .side-bar-small .side-link p {
     display: none;
