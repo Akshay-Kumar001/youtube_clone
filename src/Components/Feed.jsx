@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { API_KEY } from "../data";
+import { API_KEY, value_converter } from "../data";
+import moment from "moment";
 
 const Feed = ({ category }) => {
   const [data, setData] = useState([]);
@@ -48,8 +49,8 @@ const Feed = ({ category }) => {
             <h3 className="text-sm text-gray-600">
               {card.snippet?.channelTitle}
             </h3>
-            <p className="text-sm text-gray-500">
-              {card.statistics?.viewCount} Views
+            <p className="text-sm text-gray-500 ">
+                {value_converter(card.statistics?.viewCount)} Views &bull; {moment(card.snippet.publishedAt).fromNow()}
             </p>
           </div>
         </Link>

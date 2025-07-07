@@ -1,15 +1,16 @@
 import React from "react";
 import images from "../assets/image";
-const PlayVideo = () => {
+const PlayVideo = ({ videoId }) => {
   return (
     <div className="w-2/3">
-      <video
-        src={images.video}
-        controls
-        autoPlay
-        muted
-        className="w-full"
-      ></video>
+      <iframe
+        className="w-full h-[30vw]"
+        src={`https://www.youtube.com/embed/${videoId}/?autoplay=1`}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
       <h3 className="mt-2.5 text-2xl font-semibold">test</h3>
       <div className="flex items-center justify-between flex-wrap mt-2.5 text-sm text-slate-600">
         <p>1525 Views &bull; 2 days ago</p>
